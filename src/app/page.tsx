@@ -4,6 +4,10 @@ import HeroSection from "../components/HeroSection/index";
 import ContinuarAssistindoComponent from '../components/ContinuarAssistindoComponent';
 import RecomendadosComponent from '../components/RecomendadosComponent';
 import ShortsComponent from '../components/ShortsComponent';
+import InformaticaBasicaComponent from '../components/InformaticaBasicaComponent';
+import LogicaDeProgramcaoComponent from '../components/LogicaDeProgramacaoComponent';
+import InglesComponent from '../components/InglesComponent';
+import DesenvolvimentoWebComponent from '../components/DesenvolvimentoWebComponent';
 
 export default function Home() {
   return (
@@ -19,6 +23,10 @@ export default function Home() {
         <ContinuarAssistindoComponent />
         <RecomendadosComponent />
         <ShortsComponent />
+        <InformaticaBasicaComponent />
+        <LogicaDeProgramcaoComponent />
+        <InglesComponent />
+        <DesenvolvimentoWebComponent />
       </div>
     </main>
   );
