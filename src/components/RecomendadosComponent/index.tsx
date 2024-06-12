@@ -1,7 +1,28 @@
-export default function RecomendadosComponent() {
+"use client";
+import React from 'react';
+import { continuarassistindo } from '@/src/constants'; 
+import ParametroComponent from '../Parametro';
+import CarouselComponent from '../CarouselComponent';
+import * as styled from '../CarouselComponent/style';
+import { Title } from '../../constants';
+
+const RecomendadosComponent: React.FC = () => {
+    const continuarassistindoTitle = Title.find(t => t.id === 1)?.title;
+
     return (
-        <>
-            <h1>Oi</h1>
-        </>
-    )
+        <div>
+            <styled.Categorias>
+                {continuarassistindoTitle}
+            </styled.Categorias>
+            <CarouselComponent>
+                {continuarassistindo.map(data => (
+                    <styled.Item key={data.id}>
+                        <ParametroComponent imageUrl={data.imageUrl} title={data.title} instructor={data.instructor} />
+                    </styled.Item>
+                ))}
+            </CarouselComponent>
+        </div>
+    );
 }
+
+export default RecomendadosComponent;

@@ -1,7 +1,7 @@
 export default function Recomendados() {
     return (
         <>
-            <h1>Oi</h1>
+            <h1>Oiy</h1>
         </>
     )
 }

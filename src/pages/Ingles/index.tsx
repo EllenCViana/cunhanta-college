@@ -1,7 +1,7 @@
 export default function Ingles() {
     return (
         <>
-            <h1>Oi</h1>
+            <h1>Oio</h1>
         </>
     )
 }

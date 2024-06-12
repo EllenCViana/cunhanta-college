@@ -1,7 +1,7 @@
 export default function Shorts() {
     return (
         <>
-            <h1>Oi</h1>
+            <h1>Oiu</h1>
         </>
     )
 }
