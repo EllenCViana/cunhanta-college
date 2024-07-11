@@ -6,6 +6,7 @@ export const NavbarContainer = styled.nav`
   height: 45px;
   align-items: center;
   justify-content: center;
+  margin: 80px;
 `;
 
 export const NavList = styled.ul`

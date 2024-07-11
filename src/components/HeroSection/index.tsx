@@ -1,17 +1,18 @@
 "use client";
 import * as styledHeroSection from './style';
+import { Personagens, Section, Title, Text, Button } from './style';
 
 export default function HeroSection() {
     return (
         <>
-            <styledHeroSection.Section>
+            <Section>
                 <div>
-                    <styledHeroSection.Title>Sua jornada começa aqui!</styledHeroSection.Title>
-                    <styledHeroSection.Text>Fique por dentro das inúmeras opções de cursos disponíveis e dê o pontapé inicial na construção do seu caminho para o futuro!</styledHeroSection.Text>
-                    <styledHeroSection.Button>Começar agora</styledHeroSection.Button>
+                    <Title>Sua jornada começa aqui!</Title>
+                    <Text>Fique por dentro das inúmeras opções de cursos disponíveis e dê o pontapé inicial na construção do seu caminho para o futuro!</Text>
+                    <Button>Começar agora</Button>
                 </div>
-                <styledHeroSection.Personagens src="./personagens.svg" alt="" />
-            </styledHeroSection.Section>
+                <Personagens src="./personagens.svg" alt="" />
+            </Section>
         </>
     )
 }
