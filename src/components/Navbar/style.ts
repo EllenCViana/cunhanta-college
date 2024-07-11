@@ -20,7 +20,6 @@ export const Caminhos = styled.li`
   padding-bottom: 6px;
   cursor: pointer;
   &:hover {
-    color: #F25CAF;
-    border-bottom: 2px solid #F25CAF;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
   }
 `;

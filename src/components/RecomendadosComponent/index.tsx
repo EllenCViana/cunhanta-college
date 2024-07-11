@@ -1,28 +1,34 @@
 "use client";
 import React from 'react';
-import { continuarassistindo } from '@/src/constants'; 
-import ParametroComponent from '../Parametro';
+import { recomendados } from '@/src/constants'; 
 import CarouselComponent from '../CarouselComponent';
 import * as styled from '../CarouselComponent/style';
 import { Title } from '../../constants';
 
-const RecomendadosComponent: React.FC = () => {
-    const continuarassistindoTitle = Title.find(t => t.id === 1)?.title;
+import * as styledA from '../../styles/style';
+
+export default function RecomendadosComponent() {
+    const recomendadosTitle = Title.find(t => t.id === 2)?.title;
 
     return (
         <div>
             <styled.Categorias>
-                {continuarassistindoTitle}
+                {recomendadosTitle}
             </styled.Categorias>
+
             <CarouselComponent>
-                {continuarassistindo.map(data => (
+                {recomendados.map(data => (
                     <styled.Item key={data.id}>
-                        <ParametroComponent imageUrl={data.imageUrl} title={data.title} instructor={data.instructor} />
+                        <styledA.Card>
+                            <styledA.Image src={data.imageUrl} alt={data.title} />
+                            <styledA.InfoLogicaDeProgramacao>
+                                <h1>{data.title}</h1>
+                                <h2>{data.instructor}</h2>
+                            </styledA.InfoLogicaDeProgramacao>
+                        </styledA.Card>
                     </styled.Item>
                 ))}
             </CarouselComponent>
         </div>
     );
 }
-
-export default RecomendadosComponent;

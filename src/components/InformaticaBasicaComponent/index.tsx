@@ -1,22 +1,31 @@
+"use client";
 import React from 'react';
-import { shorts } from '@/src/constants'; 
-import ParametroComponent from '../Parametro';
+import { informaticabasica } from '@/src/constants'; 
 import CarouselComponent from '../CarouselComponent';
 import * as styled from '../CarouselComponent/style';
 import { Title } from '../../constants';
 
+import * as styledA from '../../styles/style';
+
 export default function InformaticaBasicaComponent() {
-    const shortsTitle = Title.find(t => t.id === 4)?.title;
+    const informaticabasicaTitle = Title.find(t => t.id === 4)?.title;
 
     return (
         <div>
             <styled.Categorias>
-                {shortsTitle}
+                {informaticabasicaTitle}
             </styled.Categorias>
+
             <CarouselComponent>
-                {shorts.map(data => (
+                {informaticabasica.map(data => (
                     <styled.Item key={data.id}>
-                        <ParametroComponent imageUrl={data.imageUrl} title={data.title} instructor={data.instructor} />
+                        <styledA.Card>
+                            <styledA.Image src={data.imageUrl} alt={data.title} />
+                            <styledA.InfoInformaticaBasica>
+                                <h1>{data.title}</h1>
+                                <h2>{data.instructor}</h2>
+                            </styledA.InfoInformaticaBasica>
+                        </styledA.Card>
                     </styled.Item>
                 ))}
             </CarouselComponent>

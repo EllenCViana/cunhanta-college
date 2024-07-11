@@ -1,22 +1,31 @@
+"use client";
 import React from 'react';
-import { shorts } from '@/src/constants'; 
-import ParametroComponent from '../Parametro';
+import { desenvolvimentoweb } from '@/src/constants'; 
 import CarouselComponent from '../CarouselComponent';
 import * as styled from '../CarouselComponent/style';
 import { Title } from '../../constants';
 
+import * as styledA from '../../styles/style';
+
 export default function DesenvolvimentoWebComponent() {
-    const shortsTitle = Title.find(t => t.id === 6)?.title;
+    const desenvolvimentowebTitle = Title.find(t => t.id === 7)?.title;
 
     return (
         <div>
             <styled.Categorias>
-                {shortsTitle}
+                {desenvolvimentowebTitle}
             </styled.Categorias>
+
             <CarouselComponent>
-                {shorts.map(data => (
+                {desenvolvimentoweb.map(data => (
                     <styled.Item key={data.id}>
-                        <ParametroComponent imageUrl={data.imageUrl} title={data.title} instructor={data.instructor} />
+                        <styledA.Card>
+                            <styledA.Image src={data.imageUrl} alt={data.title} />
+                            <styledA.InfoDesenvolvimentoWeb>
+                                <h1>{data.title}</h1>
+                                <h2>{data.instructor}</h2>
+                            </styledA.InfoDesenvolvimentoWeb>
+                        </styledA.Card>
                     </styled.Item>
                 ))}
             </CarouselComponent>

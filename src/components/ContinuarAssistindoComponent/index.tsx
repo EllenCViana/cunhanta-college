@@ -1,11 +1,13 @@
+"use client";
 import React from 'react';
 import { continuarassistindo } from '@/src/constants'; 
-import ParametroComponent from '../Parametro';
 import CarouselComponent from '../CarouselComponent';
 import * as styled from '../CarouselComponent/style';
 import { Title } from '../../constants';
 
-export default function RecomendadosComponent() {
+import * as styledA from '../../styles/style';
+
+export default function ContinuarAssistindoComponent() {
     const continuarassistindoTitle = Title.find(t => t.id === 1)?.title;
 
     return (
@@ -13,10 +15,17 @@ export default function RecomendadosComponent() {
             <styled.Categorias>
                 {continuarassistindoTitle}
             </styled.Categorias>
+
             <CarouselComponent>
                 {continuarassistindo.map(data => (
                     <styled.Item key={data.id}>
-                        <ParametroComponent imageUrl={data.imageUrl} title={data.title} instructor={data.instructor} />
+                        <styledA.Card>
+                            <styledA.Image src={data.imageUrl} alt={data.title} />
+                            <styledA.InfoLogicaDeProgramacao>
+                                <h1>{data.title}</h1>
+                                <h2>{data.instructor}</h2>
+                            </styledA.InfoLogicaDeProgramacao>
+                        </styledA.Card>
                     </styled.Item>
                 ))}
             </CarouselComponent>

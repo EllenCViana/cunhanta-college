@@ -3,22 +3,22 @@ import styled from "styled-components";
 
 export const Section = styled.section`
     height: 607px;
+    padding-left: 130px;
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    gap: 14px;
     margin-bottom: 30px;
+    border: 1px solid red;
 `
 
 export const Title = styled.h1`
     font-size: 48px;
-    font-weight: 200;
-    margin-top: 125px;
-    font-weight: 500;
+    margin-top: 100px;
+    font-weight: 700;
     font-family: 'Murecho', sans-serif;
+    border: 1px solid red;
     &:hover {
     cursor: pointer;
   }
-;
 `
 
 export const Text = styled.p`
@@ -26,6 +26,20 @@ export const Text = styled.p`
     margin-top: 21px;
     font-size: 18px;
     color: #fefefe;
+    border: 1px solid red;
+`
+
+export const Button = styled.button`
+    width: 239px;
+    height: 55px;
+    background-color: #f25caf;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-top: 53px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    &:hover {
+    background-color: #EB53A7;
+  }
 `
 
 export const Personagens = styled.img`
@@ -33,4 +47,5 @@ export const Personagens = styled.img`
     width: 536px;
     margin-top: 59px;
     margin-left: 14px;
+    border: 1px solid red;
 `

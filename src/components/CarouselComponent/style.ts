@@ -2,26 +2,27 @@ import styled from 'styled-components';
 
 export const CarouselContainer = styled.div`
     position: relative;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
+    border: 1px solid red;
 `;
 
 export const Carousel = styled.div`
     display: flex;
     overflow: hidden;
     scroll-behavior: smooth;
-    width: 100%;
+    /* width: 100%; */
+    border: 1px solid blue;
+    gap: 10px;
 `;
 
 export const Button = styled.button`
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
+    top: 30%;
+    /* transform: translateY(-50%); */
+    /* background: none; */
     border: none;
     cursor: pointer;
-    z-index: 1;
+    /* z-index: 1; */
+    border: 1px solid green;
 
     &.left {
         left: 0;
@@ -32,52 +33,27 @@ export const Button = styled.button`
     }
 
     img {
-        width: 24px;
-        height: 24px;
+        width: 50px;
+        height: 111px;
     }
 `;
 
 export const Item = styled.div`
     flex: 0 0 auto;
     width: 356px;
-    height: 273px;
-    margin-right: 10px;
+    height: 270px;
     border-radius: 8px;
-    position: relative;
     overflow: hidden;
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
-`;
-
-export const Informacoes = styled.div`
-    width: 347px;
-    height: 81px;
-    padding: 10px 0 0 25px;
-    background-color: #099CE0;
-    border: 2px solid #12729E;
-    border-radius: 8px 0 8px 8px;
-    margin-left: 9px;
-`;
-
-export const Title = styled.h3`
-    font-family: "Roboto", sans-serif;
-    font-size: 19px;
-    font-weight: 500;
-    height: 22px;
-    margin-bottom: 6px;
-`;
-
-export const Caption = styled.h3`
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    margin: 0;
+    /* background-size: cover; */
+    /* margin-bottom: 15px; */
+    /* background-color: yellow; */
+    border: 1px solid yellow;
 `;
 
 export const Categorias = styled.div`
     font-family: "Roboto", sans-serif;
     font-size: 24px;
     font-weight: 700;
-    margin-bottom: 16px;
+    margin: 33px 0 21px;
+    border: 1px solid orange;
 `;
