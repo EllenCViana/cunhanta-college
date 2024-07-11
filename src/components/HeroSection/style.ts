@@ -7,15 +7,15 @@ export const Section = styled.section`
     display: flex;
     gap: 14px;
     margin-bottom: 30px;
-    border: 1px solid red;
+    margin-top: 89px;
 `
 
 export const Title = styled.h1`
     font-size: 48px;
-    margin-top: 100px;
+    margin-top: 150px;
     font-weight: 700;
     font-family: 'Murecho', sans-serif;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     &:hover {
     cursor: pointer;
   }
@@ -26,7 +26,7 @@ export const Text = styled.p`
     margin-top: 21px;
     font-size: 18px;
     color: #fefefe;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 `
 
 export const Button = styled.button`
@@ -45,7 +45,7 @@ export const Button = styled.button`
 export const Personagens = styled.img`
     height: 496px;
     width: 536px;
-    margin-top: 59px;
+    margin-top: 90px;
     margin-left: 14px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 `
