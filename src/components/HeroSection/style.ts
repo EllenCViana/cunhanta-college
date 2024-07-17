@@ -15,7 +15,6 @@ export const Title = styled.h1`
     margin-top: 150px;
     font-weight: 700;
     font-family: 'Murecho', sans-serif;
-    /* border: 1px solid red; */
     &:hover {
     cursor: pointer;
   }
@@ -26,7 +25,6 @@ export const Text = styled.p`
     margin-top: 21px;
     font-size: 18px;
     color: #fefefe;
-    /* border: 1px solid red; */
 `
 
 export const Button = styled.button`
@@ -47,5 +45,4 @@ export const Personagens = styled.img`
     width: 536px;
     margin-top: 90px;
     margin-left: 14px;
-    /* border: 1px solid red; */
 `

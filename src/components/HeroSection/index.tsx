@@ -1,5 +1,4 @@
 "use client";
-import * as styledHeroSection from './style';
 import { Personagens, Section, Title, Text, Button } from './style';
 
 export default function HeroSection() {

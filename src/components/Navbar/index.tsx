@@ -1,17 +1,21 @@
 "use client";
-import Link from 'next/link';
 import * as styledNavbar from './style';
 
-export default function Navbar() {
+interface NavbarProps {
+  setSelectedComponent: (component: string) => void;
+}
+
+
+export default function Navbar({ setSelectedComponent }: NavbarProps) {
   return (
     <styledNavbar.NavbarContainer>
       <styledNavbar.NavList>
-        <styledNavbar.Caminhos><Link href="/">Home</Link></styledNavbar.Caminhos>
-        <styledNavbar.Caminhos><Link href="/Retomar">Retomar</Link></styledNavbar.Caminhos>
-        <styledNavbar.Caminhos><Link href="/Explorar">Explorar cursos</Link></styledNavbar.Caminhos>
-        <styledNavbar.Caminhos><Link href="/Quizzes">Quizzes</Link></styledNavbar.Caminhos>
-        <styledNavbar.Caminhos><Link href="/Certificados">Certificados</Link></styledNavbar.Caminhos>
-        <styledNavbar.Caminhos><Link href="/Sobre">Sobre</Link></styledNavbar.Caminhos>
+        <styledNavbar.Caminhos onClick={() => setSelectedComponent("Home")}>Home</styledNavbar.Caminhos>
+        <styledNavbar.Caminhos onClick={() => setSelectedComponent("Retomar")}>Retomar</styledNavbar.Caminhos>
+        <styledNavbar.Caminhos onClick={() => setSelectedComponent("ExplorarCursos")}>Explorar cursos</styledNavbar.Caminhos>
+        <styledNavbar.Caminhos onClick={() => setSelectedComponent("Quizzes")}>Quizzes</styledNavbar.Caminhos>
+        <styledNavbar.Caminhos onClick={() => setSelectedComponent("Certificados")}>Certificados</styledNavbar.Caminhos>
+        <styledNavbar.Caminhos onClick={() => setSelectedComponent("Sobre")}>Sobre</styledNavbar.Caminhos>
       </styledNavbar.NavList>
     </styledNavbar.NavbarContainer>
   );
