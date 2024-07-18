@@ -14,14 +14,14 @@ const CarouselComponent: React.FC<CarouselComponentProps> = ({ children }) => {
     const handleLeftClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         e.preventDefault();
         if (carousel.current) {
-            carousel.current.scrollLeft -= carousel.current.offsetWidth / 2; // Alterado para metade do offsetWidth
+            carousel.current.scrollLeft -= carousel.current.offsetWidth / 2;
         }
     };
 
     const handleRightClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         e.preventDefault();
         if (carousel.current) {
-            carousel.current.scrollLeft += carousel.current.offsetWidth / 2; // Alterado para metade do offsetWidth
+            carousel.current.scrollLeft += carousel.current.offsetWidth / 2; 
         }
     };
 
