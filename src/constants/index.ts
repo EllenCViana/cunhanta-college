@@ -99,3 +99,17 @@ export const desenvolvimentoweb = [
     { id: 9, title: 'Curso 9', instructor: 'Instrutor 9', imageUrl: './imagem.jpg' },
     { id: 10, title: 'Curso 10', instructor: 'Instrutor 10', imageUrl: './imagem.jpg' },
 ];
+
+export const quiz = [
+    { id: 1, title: 'Quiz 1', description: 'description 1'},
+    { id: 2, title: 'Quiz 2', description: 'description 2' },
+    { id: 3, title: 'Quiz 3', description: 'description 3'},
+    { id: 4, title: 'Quiz 4', description: 'description 4'},
+    { id: 5, title: 'Quiz 5', description: 'description 5'},
+    { id: 6, title: 'Quiz 6', description: 'description 6'},
+    { id: 7, title: 'Quiz 7', description: 'description 7'},
+    { id: 8, title: 'Quiz 8', description: 'description 8'},
+    { id: 9, title: 'Quiz 9', description: 'description 9'},
+    { id: 10, title: 'Quiz 10', description: 'description 10'},
+];
+

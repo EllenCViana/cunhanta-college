@@ -3,7 +3,7 @@
 import { useState, ReactNode } from 'react';
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
+
 import Retomar from '../pages/Retomar';
 import Quizzes from '../pages/Quizzes';
 import Certificados from '../pages/Certificados';
@@ -12,8 +12,6 @@ import Explorar from '../pages/Explorar';
 import '../app/globals.css';
 import Home from '../pages/Home';
 
-
-// Defina o tipo de props para RootLayout
 interface RootLayoutProps {
   children: ReactNode;
 }
@@ -50,8 +48,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <Header />
         <Navbar setSelectedComponent={setSelectedComponent} />
         {renderComponent()}
-        {children}
-        <Footer />
+        {children}    
       </body>
     </html>
   );

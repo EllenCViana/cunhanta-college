@@ -1,35 +1,47 @@
 import styled from 'styled-components';
 
-export const Section = styled.section`
-    height: 30px;
-    padding-left: 130px;
-    display: flex;
-    gap: 14px;
-    margin-bottom: 30px;
-    margin-top: 89px;
-`;
-
 export const Container = styled.div`
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 `;
 
 export const Main = styled.main`
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, auto);
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+`;
+
+export const Card = styled.div`
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #555;
+    }
+
+    h2 {
+        font-size: 16px;
+        color: #555;
+    }
 `;
 
 export const Title = styled.h1`
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-  text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
 `;
