@@ -1,10 +1,9 @@
-"use client";
+// InformaticaBasicaComponent.tsx
 import React from 'react';
 import { informaticabasica } from '@/src/constants'; 
 import CarouselComponent from '../CarouselComponent';
 import * as styled from '../CarouselComponent/style';
 import { Title } from '../../constants';
-
 import * as styledA from '../../styles/style';
 
 export default function InformaticaBasicaComponent() {
@@ -21,10 +20,10 @@ export default function InformaticaBasicaComponent() {
                     <styled.Item key={data.id}>
                         <styledA.Card>
                             <styledA.Image src={data.imageUrl} alt={data.title} />
-                            <styledA.InfoInformaticaBasica>
+                            <styledA.InfoCourse category={data.category}>
                                 <h1>{data.title}</h1>
                                 <h2>{data.instructor}</h2>
-                            </styledA.InfoInformaticaBasica>
+                            </styledA.InfoCourse>
                         </styledA.Card>
                     </styled.Item>
                 ))}

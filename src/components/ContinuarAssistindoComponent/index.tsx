@@ -4,7 +4,6 @@ import { continuarassistindo } from '@/src/constants';
 import CarouselComponent from '../CarouselComponent';
 import * as styled from '../CarouselComponent/style';
 import { Title } from '../../constants';
-
 import * as styledA from '../../styles/style';
 
 export default function ContinuarAssistindoComponent() {
@@ -21,10 +20,10 @@ export default function ContinuarAssistindoComponent() {
                     <styled.Item key={data.id}>
                         <styledA.Card>
                             <styledA.Image src={data.imageUrl} alt={data.title} />
-                            <styledA.InfoLogicaDeProgramacao>
+                            <styledA.InfoCourse category={data.category}>
                                 <h1>{data.title}</h1>
                                 <h2>{data.instructor}</h2>
-                            </styledA.InfoLogicaDeProgramacao>
+                            </styledA.InfoCourse>
                         </styledA.Card>
                     </styled.Item>
                 ))}

@@ -21,10 +21,10 @@ export default function RecomendadosComponent() {
                     <styled.Item key={data.id}>
                         <styledA.Card>
                             <styledA.Image src={data.imageUrl} alt={data.title} />
-                            <styledA.InfoLogicaDeProgramacao>
+                            <styledA.InfoCourse category={data.category}>
                                 <h1>{data.title}</h1>
                                 <h2>{data.instructor}</h2>
-                            </styledA.InfoLogicaDeProgramacao>
+                            </styledA.InfoCourse>
                         </styledA.Card>
                     </styled.Item>
                 ))}
