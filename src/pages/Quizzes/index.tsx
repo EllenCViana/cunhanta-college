@@ -1,12 +1,13 @@
 "use client"
 import React from 'react';
 
-import { Container, Main, Card, Title } from './style';
+import { Container, Main, Card, Title, Section } from './style';
 import { quiz } from '@/src/constants'; 
 
 const Quizzes: React.FC = () => {
     return (
         <div>
+            <Section></Section>
             <Container>
                 <Title>Quizzes</Title>
                 <Main>

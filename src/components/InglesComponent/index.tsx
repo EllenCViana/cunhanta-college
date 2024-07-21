@@ -1,10 +1,9 @@
-"use client";
+// InglesComponent.tsx
 import React from 'react';
 import { ingles } from '@/src/constants'; 
 import CarouselComponent from '../CarouselComponent';
 import * as styled from '../CarouselComponent/style';
 import { Title } from '../../constants';
-
 import * as styledA from '../../styles/style';
 
 export default function InglesComponent() {
@@ -21,10 +20,10 @@ export default function InglesComponent() {
                     <styled.Item key={data.id}>
                         <styledA.Card>
                             <styledA.Image src={data.imageUrl} alt={data.title} />
-                            <styledA.InfoIngles>
+                            <styledA.InfoCourse category={data.category as 'Informática Básica' | 'Lógica de Programação' | 'Inglês' | 'Desenvolvimento Web'}>
                                 <h1>{data.title}</h1>
                                 <h2>{data.instructor}</h2>
-                            </styledA.InfoIngles>
+                            </styledA.InfoCourse>
                         </styledA.Card>
                     </styled.Item>
                 ))}
