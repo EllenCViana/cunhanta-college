@@ -92,6 +92,25 @@ export const ingles = [
     { id: 10, title: 'Preparação para Testes de Inglês', instructor: 'Instrutor 10', category: 'Inglês', imageUrl: './imagem.jpg' },
 ];
 
+
+// src/constants/courseVideos.ts
+export const courseVideos: {
+    [key: number]: { id: string; title: string }[];
+  } = {
+    1: [
+      { id: 'S45kHeWnT0M', title: 'Video 1 for Basic English' },
+      { id: 'fVZhgNAXMd0', title: 'Video 2 for Basic English' },
+      // Adicione mais vídeos para o curso de Inglês Básico
+    ],
+    2: [
+      { id: 'H2xHm2I5Yio', title: 'Video 1 for Conversational English' },
+      { id: 'f24DVDiPMBo', title: 'Video 2 for Conversational English' },
+      // Adicione mais vídeos para o curso de Conversação em Inglês
+    ],
+    // Continue para outros cursos...
+  };
+  
+
 export const desenvolvimentoweb = [
     { id: 1, title: 'HTML e CSS para Iniciantes', instructor: 'Instrutor 1', category: 'Desenvolvimento Web', imageUrl: './imagem.jpg' },
     { id: 2, title: 'JavaScript Essencial', instructor: 'Instrutor 2', category: 'Desenvolvimento Web', imageUrl: './imagem.jpg' },
