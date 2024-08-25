@@ -1,16 +1,15 @@
 "use client";
 
-import { useState, ReactNode } from 'react';
+import { useState, useEffect, ReactNode } from 'react';
 import Navbar from "../components/Navbar";
-import Header from "../components/Header";
-
 import Retomar from '../pages/Retomar';
-import Quizzes from '../pages/Quizzes';
 import Certificados from '../pages/Certificados';
 import Sobre from '../pages/Sobre';
 import Explorar from '../pages/Explorar';
-import '../app/globals.css';
 import Home from '../pages/Home';
+import '../app/globals.css';
+import { useRouter } from 'next/navigation';
+import Header from '../components/Header';
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -18,17 +17,26 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   const [selectedComponent, setSelectedComponent] = useState("Home");
+  const [isMounted, setIsMounted] = useState(false);
+  const router = useRouter();
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const renderComponent = () => {
+    if (!isMounted) return null;
+
     switch (selectedComponent) {
       case "Home":
         return <Home />;
       case "Retomar":
         return <Retomar />;
       case "ExplorarCursos":
-        return <Explorar/>;
+        return <Explorar />;
       case "Quizzes":
-        return <Quizzes />;
+        router.push('/quizzes'); 
+        return null;
       case "Certificados":
         return <Certificados />;
       case "Sobre":
@@ -43,12 +51,13 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My App</title>
       </head>
       <body>
         <Header />
         <Navbar setSelectedComponent={setSelectedComponent} />
         {renderComponent()}
-        {children}    
+        {children}
       </body>
     </html>
   );
