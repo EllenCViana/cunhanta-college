@@ -4,6 +4,7 @@ import styled from 'styled-components';
 export const Card = styled.div`
     position: relative;
     height: 270px;
+    
 `;
 export const Image = styled.img`
     width: 100%;
@@ -38,6 +39,11 @@ const categoryStyles: Record<string, { backgroundColor: string; borderTopColor: 
         borderTopColor: '#059669', 
         borderLeftColor: '#059669', 
     },
+    'Figma': {
+        backgroundColor: '#34E019', 
+        borderTopColor: '#051089', 
+        borderLeftColor: '#052349', 
+    },
 };
 
 export const InfoCourse = styled.div<InfoCourseProps>`
@@ -50,6 +56,7 @@ export const InfoCourse = styled.div<InfoCourseProps>`
     width: 97%;
     border-top: 2px solid ${({ category }) => categoryStyles[category]?.borderTopColor || '#000'};
     border-left: 2px solid ${({ category }) => categoryStyles[category]?.borderLeftColor || '#000'};
+    
 
     h1 {
         font-size: 18px;

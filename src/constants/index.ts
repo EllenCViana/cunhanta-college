@@ -10,7 +10,7 @@ export const Title = [
 
 export const continuarassistindo = [
     { id: 1, title: 'Introdução à Informática', instructor: 'Adriano Alfonso', category: 'Informática Básica', imageUrl: './imagem.jpg' },
-    { id: 3, title: 'Algoritmos e Estruturas de Dados', instructor: 'Instrutor 3', category: 'Lógica de Programação', imageUrl: './imagem.jpg' },
+    { id: 3, title: 'Algoritmos e Estruturas de Dados', instructor: 'Instrutor 3', category: 'Informática Básica', imageUrl: './imagem.jpg' },
     { id: 4, title: 'Introdução ao Python', instructor: 'Instrutor 4', category: 'Lógica de Programação', imageUrl: './imagem.jpg' },
     { id: 5, title: 'Inglês para Iniciantes', instructor: 'Instrutor 5', category: 'Inglês', imageUrl: './imagem.jpg' },
     { id: 6, title: 'Conversação em Inglês', instructor: 'Instrutor 6', category: 'Inglês', imageUrl: './imagem.jpg' },
@@ -93,21 +93,20 @@ export const ingles = [
 ];
 
 
-// src/constants/courseVideos.ts
 export const courseVideos: {
     [key: number]: { id: string; title: string }[];
   } = {
     1: [
       { id: 'S45kHeWnT0M', title: 'Video 1 for Basic English' },
       { id: 'fVZhgNAXMd0', title: 'Video 2 for Basic English' },
-      // Adicione mais vídeos para o curso de Inglês Básico
+
     ],
     2: [
       { id: 'H2xHm2I5Yio', title: 'Video 1 for Conversational English' },
       { id: 'f24DVDiPMBo', title: 'Video 2 for Conversational English' },
-      // Adicione mais vídeos para o curso de Conversação em Inglês
+
     ],
-    // Continue para outros cursos...
+
   };
   
 
