@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "antd": "^5.20.2",
     "firebase": "^10.12.4",
     "framer-motion": "^11.1.7",
     "lodash": "^4.17.21",

@@ -1,26 +1,52 @@
 "use client";
 
 import React from 'react';
-import { Container, Main, Card, Title, QuizImage, Button } from './style';
+import { Button } from 'antd/lib';
 import { quiz } from '@/src/constants';
+import MenuQuizz from '@/src/components/menu_quizz';
 
 const Quizzes: React.FC = () => {
     return (
-        <div>
-            <Container>
-                <Title>Quizzes</Title>
-                <Main>
+        <div style={{ padding: '24px', display: 'flex', gap: '24px' }}>
+        
+            <div style={{ minWidth: '200px' }}>
+                <MenuQuizz />
+            </div>
+        
+            <div style={{ flex: 1 }}>
+                <h1 style={{ textAlign: 'center', marginBottom: '24px' }}>Quizzes</h1>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', justifyContent: 'center' }}>
                     {quiz.map(data => (
-                        <Card key={data.id}>
-                            <QuizImage src={data.image} alt={data.title} />
-                            <h1>{data.title}</h1>
-                            <h2>{data.questions} questões</h2>
-                            <p>Professor {data.professor}</p>
-                            <Button>Jogar agora!</Button>
-                        </Card>
+                        <div
+                            key={data.id}
+                            style={{
+                                fontSize: '12px',
+                                width: 350,
+                                display: 'flex',
+                                border: '1px solid #d9d9d9',
+                                borderRadius: '4px',
+                                overflow: 'hidden',
+                                backgroundColor: '#fff',
+                                color: '#000',
+                                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+                                height: 150
+                            }}
+                        >
+                            <img
+                                alt={data.title}
+                                src={data.image}
+                                style={{ width: '120px', height: '100px', marginTop: 20 }}
+                            />
+                            <div style={{ padding: '16px', flex: 1 }}>
+                                <h3 style={{ margin: 0 }}>{data.title}</h3>
+                                <p>{`${data.questions} questões`}</p>
+                                <p style={{ marginTop: '8px' }}>Professor {data.professor}</p>
+                                <Button type="primary" style={{ width: "100%" }}>Jogar agora!</Button>
+                            </div>
+                        </div>
                     ))}
-                </Main>
-            </Container>
+                </div>
+            </div>
         </div>
     );
 };
