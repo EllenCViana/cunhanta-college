@@ -3,7 +3,6 @@
 import { useState, ReactNode } from 'react';
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
-
 import Retomar from '../pages/Retomar';
 import Quizzes from '../pages/Quizzes';
 import Certificados from '../pages/Certificados';
