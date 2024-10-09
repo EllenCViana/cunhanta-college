@@ -13,7 +13,7 @@ export default function Navbar({ setSelectedComponent }: NavbarProps) {
         <styledNavbar.Caminhos onClick={() => setSelectedComponent("Home")}>Home</styledNavbar.Caminhos>
         <styledNavbar.Caminhos onClick={() => setSelectedComponent("Retomar")}>Retomar</styledNavbar.Caminhos>
         <styledNavbar.Caminhos onClick={() => setSelectedComponent("ExplorarCursos")}>Explorar cursos</styledNavbar.Caminhos>
-        <styledNavbar.Caminhos onClick={() => setSelectedComponent("Quizzes")}>Quizzes</styledNavbar.Caminhos>
+        <styledNavbar.Caminhos onClick={() => setSelectedComponent("Quiz")}>Quizzes</styledNavbar.Caminhos>
         <styledNavbar.Caminhos onClick={() => setSelectedComponent("Certificados")}>Certificados</styledNavbar.Caminhos>
         <styledNavbar.Caminhos onClick={() => setSelectedComponent("Sobre")}>Sobre</styledNavbar.Caminhos>
       </styledNavbar.NavList>

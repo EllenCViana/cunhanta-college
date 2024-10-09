@@ -1,15 +1,14 @@
 "use client";
-
 import { useState, ReactNode } from 'react';
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import Retomar from '../pages/Retomar';
-import Quizzes from '../pages/Quizzes';
 import Certificados from '../pages/Certificados';
 import Sobre from '../pages/Sobre';
 import Explorar from '../pages/Explorar';
 import '../app/globals.css';
 import Home from '../pages/Home';
+import Quiz from '../pages/Quiz';
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -26,8 +25,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
         return <Retomar />;
       case "ExplorarCursos":
         return <Explorar/>;
-      case "Quizzes":
-        return <Quizzes />;
+      case "Quiz":
+        return <Quiz />;
       case "Certificados":
         return <Certificados />;
       case "Sobre":

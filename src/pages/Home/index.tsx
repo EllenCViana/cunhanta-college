@@ -1,5 +1,7 @@
 "use client";
 
+import React from 'react';
+import { useRouter } from 'next/navigation';
 import ContinuarAssistindoComponent from '@/src/components/ContinuarAssistindoComponent';
 import DesenvolvimentoWebComponent from '@/src/components/DesenvolvimentoWebComponent';
 import HeroSection from '@/src/components/HeroSection';
@@ -10,16 +12,18 @@ import RecomendadosComponent from '@/src/components/RecomendadosComponent';
 import ShortsComponent from '@/src/components/ShortsComponent';
 import Head from 'next/head';
 
-
 const Home: React.FC = () => {
+  const router = useRouter();
+
+  function handleCourseClick(courseId: number): void {
+    router.push(`/courses/${courseId}`);
+  }
+
   return (
     <main>
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200..1000&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Murecho:wght@100..900&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
       </Head>
       <HeroSection />
       <section style={{ marginLeft: "30px" }}>
@@ -28,11 +32,11 @@ const Home: React.FC = () => {
         <ShortsComponent />
         <InformaticaBasicaComponent />
         <LogicaDeProgramacaoComponent />
-        <InglesComponent /> 
+        <InglesComponent onCourseClick={handleCourseClick} />
         <DesenvolvimentoWebComponent />
       </section>
     </main>
   );
-}
+};
 
 export default Home;
