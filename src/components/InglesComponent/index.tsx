@@ -3,7 +3,7 @@ import { ingles } from '@/src/constants';
 import CarouselComponent from '../CarouselComponent';
 import * as styled from '../CarouselComponent/style';
 import { Title } from '../../constants';
-import * as styledA from '../../styles/style';
+import * as styledA from '../../styles/global';
 
 interface InglesComponentProps {
   onCourseClick: (courseId: number) => void;

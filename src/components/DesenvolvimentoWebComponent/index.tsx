@@ -4,7 +4,7 @@ import { desenvolvimentoweb } from '@/src/constants';
 import CarouselComponent from '../CarouselComponent';
 import * as styled from '../CarouselComponent/style';
 import { Title } from '../../constants';
-import * as styledA from '../../styles/style';
+import * as styledA from '../../styles/global';
 
 export default function DesenvolvimentoWebComponent() {
     const desenvolvimentoWebTitle = Title.find(t => t.id === 7)?.title;

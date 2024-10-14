@@ -12,8 +12,6 @@ export const Image = styled.img`
     object-fit: cover;
 `;
 
-
-
 interface InfoCourseProps {
     category: string; 
 }
