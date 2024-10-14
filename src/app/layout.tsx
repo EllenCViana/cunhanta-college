@@ -3,12 +3,13 @@ import { useState, ReactNode } from 'react';
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import Retomar from '../pages/Retomar';
-import Certificados from '../pages/Certificados';
+import Certificados from '../components/Certificados';
 import Sobre from '../pages/Sobre';
-import Explorar from '../pages/Explorar';
-import '../app/globals.css';
+import Explorar from '../components/Explorar';
+import './globals.css';
+
+import Quiz from '../components/Quiz';
 import Home from '../pages/Home';
-import Quiz from '../pages/Quiz';
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -24,10 +25,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
       case "Retomar":
         return <Retomar />;
       case "ExplorarCursos":
-        return <Explorar/>;
+        return <Explorar />;
       case "Quiz":
         return <Quiz />;
-      case "Certificados":
+      case "Certificado":
         return <Certificados />;
       case "Sobre":
         return <Sobre />;
@@ -46,7 +47,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <Header />
         <Navbar setSelectedComponent={setSelectedComponent} />
         {renderComponent()}
-        {children}    
+        {children}
       </body>
     </html>
   );
