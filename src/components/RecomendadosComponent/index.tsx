@@ -5,7 +5,7 @@ import CarouselComponent from '../CarouselComponent';
 import * as styled from '../CarouselComponent/style';
 import { Title } from '../../constants';
 
-import * as styledA from '../../styles/style';
+import * as styledA from '../../styles/global';
 
 export default function RecomendadosComponent() {
     const recomendadosTitle = Title.find(t => t.id === 2)?.title;
