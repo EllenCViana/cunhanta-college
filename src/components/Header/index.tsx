@@ -8,11 +8,11 @@ export default function Header() {
     const router = useRouter();
 
     const handleSignUpClick = () => {
-        router.push('/cadastro'); 
+        router.push(''); 
     };
 
     const handleLoginClick = () => {
-        router.push('/login'); 
+        router.push(''); 
     };
 
     return (

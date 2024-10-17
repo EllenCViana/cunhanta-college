@@ -125,15 +125,62 @@ export const desenvolvimentoweb = [
 
 
 export const quiz = [
-    { id: 1, title: 'Introdução ao JavaScript', description: 'Teste seus conhecimentos básicos sobre JavaScript.' },
-    { id: 2, title: 'HTML e CSS Avançado', description: 'Avalie suas habilidades avançadas em HTML e CSS.' },
-    { id: 3, title: 'Conceitos de Programação', description: 'Verifique sua compreensão dos conceitos fundamentais de programação.' },
-    { id: 4, title: 'Banco de Dados Relacionais', description: 'Teste seus conhecimentos sobre bancos de dados relacionais e SQL.' },
-    { id: 5, title: 'Fundamentos de Redes de Computadores', description: 'Avalie seus conhecimentos sobre redes de computadores.' },
-    { id: 6, title: 'Desenvolvimento Web com React', description: 'Verifique seu entendimento sobre o desenvolvimento de aplicações com React.' },
-    { id: 7, title: 'Segurança da Informação', description: 'Teste seus conhecimentos em segurança da informação e boas práticas.' },
-    { id: 8, title: 'Introdução ao Python', description: 'Avalie seus conhecimentos iniciais sobre a linguagem de programação Python.' },
-    { id: 9, title: 'Noções de DevOps', description: 'Verifique seu entendimento sobre práticas e ferramentas de DevOps.' },
-    { id: 10, title: 'Análise de Dados com Python', description: 'Teste seus conhecimentos sobre análise de dados utilizando Python.' },
+    { 
+        id: 1, 
+        title: 'Introdução ao JavaScript', 
+        description: 'Teste seus conhecimentos básicos sobre JavaScript.', 
+        image: './imagem.jpg',
+        questions: 10, 
+        professor: 'Professor João' 
+    },
+    { 
+        id: 2, 
+        title: 'HTML e CSS Avançado', 
+        description: 'Avalie suas habilidades avançadas em HTML e CSS.', 
+        image: './imagem.jpg', 
+        questions: 15, 
+        professor: 'Professor Maria' 
+    },
+    { 
+        id: 3, 
+        title: 'Conceitos de Programação', 
+        description: 'Verifique sua compreensão dos conceitos fundamentais de programação.', 
+        image: './imagem.jpg', 
+        questions: 20, 
+        professor: 'Professor José' 
+    },
+    { 
+        id: 4, 
+        title: 'Banco de Dados Relacionais', 
+        description: 'Teste seus conhecimentos sobre bancos de dados relacionais e SQL.', 
+        image: './imagem.jpg', 
+        questions: 12, 
+        professor: 'Professor Ana' 
+    },
+    { 
+        id: 5, 
+        title: 'Fundamentos de Redes de Computadores', 
+        description: 'Avalie seus conhecimentos sobre redes de computadores.', 
+        image: './imagem.jpg', 
+        questions: 18, 
+        professor: 'Professor Marcos' 
+    },
+    { 
+        id: 6, 
+        title: 'Desenvolvimento Web com React', 
+        description: 'Verifique seu entendimento sobre o desenvolvimento de aplicações com React.', 
+        image: './imagem.jpg', 
+        questions: 25, 
+        professor: 'Professor Carla' 
+    },
+    { 
+        id: 7, 
+        title: 'Segurança da Informação', 
+        description: 'Teste seus conhecimentos em segurança da informação e boas práticas.', 
+        image: './imagem.jpg', 
+        questions: 10, 
+        professor: 'Professor Pedro' 
+    },
+   
 ];
 
